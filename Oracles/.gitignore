@@ -1,0 +1,4 @@
+build
+.vscode
+node_modules/zen-observable-ts/node_modules
+node_modules
