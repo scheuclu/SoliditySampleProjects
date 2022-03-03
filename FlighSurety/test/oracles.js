@@ -3,7 +3,7 @@ const Web3 = require("web3");
 //var BigNumber = require('bignumber.js');
 
 contract("Oracles", async (accounts) => {
-  const TEST_ORACLES_COUNT = 6;
+  const TEST_ORACLES_COUNT = 20;
   let config;
   before("setup contract", async () => {
     config = await Test.Config(accounts);
