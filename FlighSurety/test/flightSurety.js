@@ -239,9 +239,6 @@ contract("Flight Surety Tests", async (accounts) => {
     );
   });
 
-  // creditInsurees
-  // pay
-
   it("Insurance for a flight can be bought", async () => {
     // ARRANGE
     const insuree = accounts[3];

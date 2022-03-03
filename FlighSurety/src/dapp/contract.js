@@ -3,19 +3,24 @@ import FlightSuretyData from "../../build/contracts/FlightSuretyData.json";
 import Config from "./config.json";
 import Web3 from "web3";
 
-const ethEnabled = () => {  if (window.web3) {    window.web3 = new Web3(window.web3.currentProvider);    window.ethereum.enable();    return true;  }  return false;}
-if (!ethEnabled()) {  alert("Please install MetaMask to use this dApp!");}
-
+const ethEnabled = () => {
+  if (window.web3) {
+    window.web3 = new Web3(window.web3.currentProvider);
+    window.ethereum.enable();
+    return true;
+  }
+  return false;
+}
+if (!ethEnabled()) {
+  alert("Please install MetaMask to use this dApp!");
+}
 
 export default class Contract {
   constructor(network, callback) {
-    console.log("===network:", network);
     let config = Config[network];
     this.web3 = new Web3(
       Web3.givenProvider || new Web3.providers.HttpProvider(config.url)
     );
-    //this.web3 = new Web3(new Web3.providers.HttpProvider(config.url));
-    console.log("===web3", web3);
     this.flightSuretyApp = new this.web3.eth.Contract(
       FlightSuretyApp.abi,
       config.appAddress
