@@ -1,19 +1,22 @@
 body {
-    background-image: url('flight.jpg'); /* Source: iStockPhoto */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b5/Antonov_Design_Bureau_Antonov_An-225_Mriya_at_Leipzig_Halle_%28EDDP-LEJ%29.jpg'); /* Source: iStockPhoto */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container {
     margin-top: 400px;
-    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.9;
-    color: #fff;
-    padding: 40px;
+    color: rgb(0, 0, 0);
+    padding: 100px;
+    font-size: larger;
+    vertical-align: bottom;
 }
 
 .top-20 {
     margin-top: 20px;
+    vertical-align: bottom;
 }
 
 h5 {
@@ -40,3 +43,12 @@ label.form {
 input {
     margin-right: 30px;
 }
+
+.my-button {
+    color: #050505;
+    font-weight: bold;
+    border: 2px solid black;
+    /* padding: 5px 10px; */
+}
+
+/* btn btn-primary btn-block */
