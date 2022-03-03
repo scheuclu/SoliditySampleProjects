@@ -9,7 +9,8 @@ To interact with this application, you will need Metamask installed.
 The contract runs on the Rinkeby testnet, so you'll need some test Ether there.
 
 
-This is how the UI should look like **TODO**.
+This is how the UI should look like:
+![](ui.png)
 
 ## Run locally
 
