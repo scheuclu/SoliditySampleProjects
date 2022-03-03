@@ -1,0 +1,10 @@
+build/
+node_modules/
+prod/
+dapp/
+logs/
+
+src/server/config.json
+.babelrc
+.secret
+.infura_key
