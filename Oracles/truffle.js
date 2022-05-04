@@ -1,5 +1,5 @@
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "solution birth talk find never bag special adapt income tattoo follow";
+var mnemonic = "TODO";
 var infuraKey = "";
 
 module.exports = {
